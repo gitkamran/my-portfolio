@@ -12,5 +12,7 @@
 @layer base {
     html {
         font-family: 'iranYekan';
+        scroll-behavior: smooth;
+        scrollbar-width: 2px;
     }
 }
