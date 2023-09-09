@@ -3,19 +3,27 @@ import Link from "next/link"
 const Navbar = () => {
     return (
         <nav>
-            <ul className="flex items-center gap-4">
+            <ul className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-4">
                 <li>
                     <Link
                         href="/#about"
-                        className="flex items-center justify-center outline outline-1 p-2 w-28 rounded-xl text-zinc-500 hover:bg-violet-200/50 transition duration-300"
+                        className="flex items-center justify-center text-zinc-600"
                     >
                         درباره من
                     </Link>
                 </li>
                 <li>
                     <Link
+                        href="/#skills"
+                        className="flex items-center justify-center text-zinc-600"
+                    >
+                        مهارت های من
+                    </Link>
+                </li>
+                <li>
+                    <Link
                         href="/#portfolio"
-                        className="flex items-center justify-center outline outline-1 p-2 w-28 rounded-xl text-zinc-500 hover:bg-indigo-200/50 transition duration-300"
+                        className="flex items-center justify-center text-zinc-600"
                     >
                         نمونه کار ها
                     </Link>
@@ -23,9 +31,17 @@ const Navbar = () => {
                 <li>
                     <Link
                         href="/#Ejucation"
-                        className="flex items-center justify-center outline outline-1 p-2 w-28 rounded-xl text-zinc-500 hover:bg-violet-200/50 transition duration-300"
+                        className="flex items-center justify-center text-zinc-600"
                     >
                         سوابق آموزشی
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        href="/#contact"
+                        className="flex items-center justify-center text-zinc-600"
+                    >
+                        اطلاعات تماس
                     </Link>
                 </li>
             </ul>
