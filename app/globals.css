@@ -16,6 +16,10 @@
     }
 }
 
+.ltr {
+    direction: ltr;
+}
+
 ::-webkit-scrollbar {
     /* Customize the scrollbar width */
     width: .4rem;
