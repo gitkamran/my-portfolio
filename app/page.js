@@ -6,12 +6,18 @@ import Skills from "@/components/main/skills/Skills";
 
 export default function Home() {
   return (
-    <main>
+    <main className="snap-y">
+
       <About />
+
       <Skills />
+
       <Portfolio />
+
       <Ejucation />
+
       <Contact />
+
     </main>
   )
 }

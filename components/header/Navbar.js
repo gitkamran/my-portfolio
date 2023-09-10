@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const Navbar = () => {
+const Navbar = ({ setColor }) => {
     return (
         <nav>
             <ul className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-4">

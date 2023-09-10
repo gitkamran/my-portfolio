@@ -12,7 +12,7 @@ const Header = () => {
         setShowMenu(!showMenu)
     }
     return (
-        <header className="p-2 fixed top-0 z-50 w-full">
+        <header className={`p-2 fixed top-0 z-50 w-full bg-indigo-100`}>
             <div className="flex items-center gap-4">
                 <Link href="/#about" className="text-zinc-600 text-lg font-bold whitespace-nowrap">Mohammad Kamran</Link>
                 <div className="hidden md:flex items-center justify-between w-full">
@@ -26,18 +26,16 @@ const Header = () => {
             <div onClick={menuHandler} className={showMenu ?
                 "bg-black/70 fixed top-0 left-0 w-full h-screen md:hidden" : ""}>
                 <div className={showMenu ?
-                    "bg-indigo-50 fixed top-0 left-0 w-[75%] sm:w-[60%] h-screen ease-in duration-500 z-20" :
-                    "bg-indigo-50 fixed top-0 left-[-100%] ease-in duration-500"
+                    "bg-indigo-100 fixed top-0 left-0 w-[75%] sm:w-[60%] h-screen ease-in duration-500 z-20" :
+                    "bg-indigo-100 fixed top-0 left-[-100%] ease-in duration-500"
                 }>
                     <div className="w-full min-h-screen flex flex-col justify-between gap-4 p-2 shadow-md">
                         <div className="flex flex-col justify-between gap-4">
-                            <div className="border-b border-indigo-500 pb-2">
+                            <div className="flex items-center justify-between border-b border-indigo-500 pb-2">
                                 <BsX onClick={menuHandler} className="text-3xl text-gray-500" />
+                                <SocialMedia />
                             </div>
                             <Navbar />
-                        </div>
-                        <div className="flex justify-end">
-                            <SocialMedia />
                         </div>
                     </div>
                 </div>
