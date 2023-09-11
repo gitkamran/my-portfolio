@@ -1,5 +1,5 @@
 import About from "@/components/main/about/About";
-import Contact from "@/components/main/contact/Contact";
+import ContactMe from "@/components/main/contact-me/ContactMe";
 import Ejucation from "@/components/main/ejucation/Ejucation";
 import Portfolio from "@/components/main/portfolio/Portfolio";
 import Skills from "@/components/main/skills/Skills";
@@ -7,17 +7,11 @@ import Skills from "@/components/main/skills/Skills";
 export default function Home() {
   return (
     <main className="snap-y">
-
       <About />
-
       <Skills />
-
       <Portfolio />
-
       <Ejucation />
-
-      <Contact />
-
+      <ContactMe />
     </main>
   )
 }

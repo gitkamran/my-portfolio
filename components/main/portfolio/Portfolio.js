@@ -16,9 +16,13 @@ const Portfolio = () => {
               priority
               className='w-48 h-auto'
             />
-            <div className='p-2'>
+            <div className='p-2 flex flex-col gap-2'>
               <h2 className='text-gray-600 text-xl'>وب اپلیکیشن خرید فایل</h2>
               <p className='text-sm text-gray-500'>وب اپلیکیشن خرید و دانلود فایل و  پرداخت انلاین</p>
+              <div>
+                <h2>تکنولوژی های استفاده شده: </h2>
+                <h2>next js, node js, express, mongo db, tailwind css</h2>
+              </div>
             </div>
           </div>
         </div>

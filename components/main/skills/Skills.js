@@ -3,10 +3,10 @@ import Image from "next/image"
 
 const Skills = () => {
   return (
-    <div id='skills' className='snap-start w-full h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 pt-12 md:pt-0'>
+    <div id='skills' className='snap-start w-full h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 pt-8 px-6 md:p-0'>
       <div className='flex flex-col gap-4 w-[95%] lg:w-[80%] bg-indigo-200/30 shadow-md rounded-md px-2 py-4 md:p-4'>
-        <h1 className='border-r-8 pr-2 border-r-gray-400 text-2xl font-extrabold text-gray-600 mb-8'>مهارت هایی که دارم</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 ltr border-b border-b-gray-400 pb-4 gap-4">
+        <h1 className='border-r-8 pr-2 border-r-gray-400 text-2xl font-extrabold text-gray-600'>مهارت هایی که دارم</h1>
+        <div className="grid grid-cols-2 md:grid-cols-3 ltr border-b border-b-gray-400 pb-4 gap-2">
             <SkillBox
               src="/assets/images/skills/html.svg"
               alt="HTML"
@@ -56,14 +56,14 @@ const Skills = () => {
         <div className="flex flex-col gap-4 md:flex-row md:items-center justify-between w-full">
           <h2 className="md:text-lg text-gray-500">قبل از برنامه نویسی اینها رو انجام میدادم</h2>
           <div className="flex items-center justify-between gap-4 ltr">
-            <div className='flex items-center gap-1 md:gap-2 md:text-xl text-gray-500 w-fit'>
+            <div className='flex items-center gap-1 md:gap-2 text-sm md:text-xl text-gray-500 w-fit'>
               <Image
                 src="/assets/images/skills/photoshop.svg"
                 alt="HTML"
                 width={28}
                 height={28}
                 priority
-                className="w-6 md:w-7 h-auto"
+                className="w-5 md:w-7 h-auto"
               />
               <h2 className="">Photoshop</h2>
             </div>
@@ -74,7 +74,7 @@ const Skills = () => {
                 width={28}
                 height={28}
                 priority
-                className="w-6 md:w-7 h-auto"
+                className="w-5 md:w-7 h-auto"
               />
               <h2 className="">Illustrator</h2>
             </div>
@@ -85,7 +85,7 @@ const Skills = () => {
                 width={28}
                 height={28}
                 priority
-                className="w-6 md:w-7 h-auto"
+                className="w-5 md:w-7 h-auto"
               />
               <h2 className="">Wordpress</h2>
             </div>
