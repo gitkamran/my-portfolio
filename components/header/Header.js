@@ -5,6 +5,7 @@ import Navbar from "./Navbar"
 import SocialMedia from "./SocialMedia"
 import { BsList, BsX } from "react-icons/bs"
 import { useState } from "react"
+import NavbarMobile from "./NavbarMobile"
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -23,7 +24,7 @@ const Header = () => {
                     <BsList onClick={menuHandler} className="text-3xl" />
                 </div>
             </div>
-            <div onClick={menuHandler} className={showMenu ?
+            <div className={showMenu ?
                 "bg-black/70 fixed top-0 left-0 w-full h-screen md:hidden" : ""}>
                 <div className={showMenu ?
                     "bg-indigo-100 fixed top-0 left-0 w-[75%] sm:w-[60%] h-screen ease-in duration-500 z-20" :
@@ -35,7 +36,7 @@ const Header = () => {
                                 <BsX onClick={menuHandler} className="text-3xl text-gray-500" />
                                 <SocialMedia />
                             </div>
-                            <Navbar />
+                            <NavbarMobile setShowMenu={setShowMenu} />
                         </div>
                     </div>
                 </div>

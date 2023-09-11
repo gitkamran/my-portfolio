@@ -1,13 +1,13 @@
 import Link from "next/link"
 
-const Navbar = ({ setColor }) => {
+const Navbar = () => {
     return (
         <nav>
-            <ul className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-4">
+            <ul className="flex flex-row items-center gap-4">
                 <li>
                     <Link
                         href="/#about"
-                        className="flex items-center justify-center text-zinc-600"
+                        className="relative flex items-center justify-center text-zinc-600 before:ease-in before:duration-300 before:h-0.5 before:w-full before:absolute before:bottom-0 before:right-[-100%] hover:before:right-0 before:bg-indigo-400 overflow-hidden"
                     >
                         درباره من
                     </Link>
@@ -15,7 +15,7 @@ const Navbar = ({ setColor }) => {
                 <li>
                     <Link
                         href="/#skills"
-                        className="flex items-center justify-center text-zinc-600"
+                        className="relative flex items-center justify-center text-zinc-600 before:ease-in before:duration-300 before:h-0.5 before:w-full before:absolute before:bottom-0 before:right-[-100%] hover:before:right-0 before:bg-indigo-400 overflow-hidden"
                     >
                         مهارت های من
                     </Link>
@@ -23,7 +23,7 @@ const Navbar = ({ setColor }) => {
                 <li>
                     <Link
                         href="/#portfolio"
-                        className="flex items-center justify-center text-zinc-600"
+                        className="relative flex items-center justify-center text-zinc-600 before:ease-in before:duration-300 before:h-0.5 before:w-full before:absolute before:bottom-0 before:right-[-100%] hover:before:right-0 before:bg-indigo-400 overflow-hidden"
                     >
                         نمونه کار ها
                     </Link>
@@ -31,7 +31,7 @@ const Navbar = ({ setColor }) => {
                 <li>
                     <Link
                         href="/#Ejucation"
-                        className="flex items-center justify-center text-zinc-600"
+                        className="relative flex items-center justify-center text-zinc-600 before:ease-in before:duration-300 before:h-0.5 before:w-full before:absolute before:bottom-0 before:right-[-100%] hover:before:right-0 before:bg-indigo-400 overflow-hidden"
                     >
                         سوابق آموزشی
                     </Link>
@@ -39,7 +39,7 @@ const Navbar = ({ setColor }) => {
                 <li>
                     <Link
                         href="/#contact"
-                        className="flex items-center justify-center text-zinc-600"
+                        className="relative flex items-center justify-center text-zinc-600 before:ease-in before:duration-300 before:h-0.5 before:w-full before:absolute before:bottom-0 before:right-[-100%] hover:before:right-0 before:bg-indigo-400 overflow-hidden"
                     >
                         اطلاعات تماس
                     </Link>

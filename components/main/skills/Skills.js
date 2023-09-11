@@ -54,7 +54,7 @@ const Skills = () => {
             />
         </div>
         <div className="flex flex-col gap-4 md:flex-row md:items-center justify-between w-full">
-          <h2 className="md:text-lg lg:text-xl text-gray-600">قبل از برنامه نویسی اینها رو انجام میدادم</h2>
+          <h2 className="md:text-lg text-gray-500">قبل از برنامه نویسی اینها رو انجام میدادم</h2>
           <div className="flex items-center justify-between gap-4 ltr">
             <div className='flex items-center gap-1 md:gap-2 md:text-xl text-gray-500 w-fit'>
               <Image
