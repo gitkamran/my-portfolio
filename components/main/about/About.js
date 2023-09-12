@@ -7,7 +7,7 @@ const About = () => {
     <div id='about' className='snap-start w-full min-h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 pt-8 px-6 md:pt-0'>
       <div className='flex flex-col md:flex-row md:items-stretch justify-center w-[95%] lg:w-[80%] shadow-md rounded-md bg-indigo-200/30 overflow-hidden'>
         <div className='flex flex-col gap-3 lg:gap-4 w-full px-2 py-4 md:p-4 basis-2/3'>
-          <h1 className='border-r-8 pr-2 border-r-gray-400 text-2xl font-extrabold text-gray-600'>محمد کامران هستم</h1>
+          <h1 className='border-r-4 md:border-r-8 pr-2 border-r-gray-400 text-lg md:text-2xl font-extrabold text-gray-600'>محمد کامران هستم</h1>
           <div className='flex items-center gap-1 md:text-lg lg:text-xl text-gray-500'>
             <BsGeoAlt className='text-indigo-400' />
             <h2>ساکن کرج</h2>

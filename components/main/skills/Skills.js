@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <div id='skills' className='snap-start w-full h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 pt-8 px-6 md:p-0'>
       <div className='flex flex-col gap-4 w-[95%] lg:w-[80%] bg-indigo-200/30 shadow-md rounded-md px-2 py-4 md:p-4'>
-        <h1 className='border-r-8 pr-2 border-r-gray-400 text-2xl font-extrabold text-gray-600'>مهارت هایی که دارم</h1>
+        <h1 className='border-r-4 md:border-r-8 pr-2 border-r-gray-400 text-lg md:text-2xl font-extrabold text-gray-600'>مهارت هایی که دارم</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 ltr border-b border-b-gray-400 pb-4 gap-2">
             <SkillBox
               src="/assets/images/skills/html.svg"

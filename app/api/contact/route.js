@@ -16,14 +16,12 @@ export async function POST(req) {
     });
   } catch (error) {
     if (error instanceof mongoose.Error.ValidationError) {
-      let errorList = [];
-      for (let e in error.errors) {
-        errorList.push(error.errors[e].message);
-      }
-      console.log(errorList);
-      return NextResponse.json({ msg: errorList });
+      return NextResponse.json({ msg: error.errors });
     } else {
-      return NextResponse.json({ msg: ["امکان ارسال پیام وجود ندارد."] });
+      return NextResponse.json({
+        msg: ["امکان ارسال پیام وجود ندارد."],
+        faild: true
+      });
     }
   }
 }
