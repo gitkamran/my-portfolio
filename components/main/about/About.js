@@ -4,9 +4,9 @@ import { BsBook, BsCodeSlash, BsGeoAlt, BsHeart } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <div id='about' className='snap-start w-full min-h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 pt-8 px-6 md:pt-0'>
-      <div className='flex flex-col md:flex-row md:items-stretch justify-center w-[95%] lg:w-[80%] shadow-md rounded-md bg-indigo-200/30 overflow-hidden'>
-        <div className='flex flex-col gap-3 lg:gap-4 w-full px-2 py-4 md:p-4 basis-2/3'>
+    <div id='about' className='snap-start w-full min-h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 pt-12'>
+      <div className='flex flex-col md:flex-row md:items-stretch justify-center gap-2 w-[95%] lg:w-[80%] shadow-md rounded-md bg-indigo-200/30 overflow-hidden p-2 md:p-4'>
+        <div className='flex flex-col gap-3 lg:gap-4 w-full'>
           <h1 className='border-r-4 md:border-r-8 pr-2 border-r-gray-400 text-lg md:text-2xl font-extrabold text-gray-600'>محمد کامران هستم</h1>
           <div className='flex items-center gap-1 md:text-lg lg:text-xl text-gray-500'>
             <BsGeoAlt className='text-indigo-400' />
@@ -28,14 +28,14 @@ const About = () => {
             در حال حاضر react js، next js و node js کار می کنم.
             می تونید مهارت های من رو <Link href="/#skills" className='text-blue-500 underline underline-offset-4'>اینجا</Link> مطالعه بفرمائید.</p>
         </div>
-        <div className='flex items-center justify-center w-full md:w-[70%] basis-1/3'>
+        <div className='flex items-center justify-center w-full md:w-auto overflow-hidden rounded-md'>
           <Image
             src="/assets/images/mk.jpg"
             alt='محمد کامران'
             width={800}
             height={800}
             priority
-            className='w-full h-full object-cover'
+            className='w-auto h-auto object-cover md:hover:scale-110 ease-linear duration-300'
           />
         </div>
       </div>
