@@ -1,13 +1,14 @@
 import PortfolioBox from "@/components/portfolio-box/PortfolioBox"
+import Image from "next/image"
 
 const Portfolio = () => {
 
   return (
-    <div id='portfolio' className='snap-start w-full min-h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 pt-12'>
+    <div id='portfolio' className='snap-start w-full min-h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 py-12'>
       <div className='flex flex-col gap-4 w-[95%] lg:w-[80%] bg-indigo-200/30 shadow-md rounded-md px-2 py-4 md:p-4'>
         <h1 className='border-r-4 md:border-r-8 pr-2 border-r-gray-400 text-lg md:text-2xl font-extrabold text-gray-600'>چنتا از نمونه کار هام</h1>
         <div className="flex flex-col gap-4 w-full">
-
+          <h2 className="text-lg text-gray-500 font-bold">وب اپلیکیشن</h2>
           <PortfolioBox
             // newupdate.ir
             src="/assets/images/portfolio/logo-portfolio.svg"
@@ -19,6 +20,7 @@ const Portfolio = () => {
             tools="next js, node js, express, mongo db, tailwind css"
             link="https://newupdate.ir"
           />
+          <h2 className="text-lg text-gray-500 font-bold">وب سایت</h2>
           <PortfolioBox
             // music100.ir
             src="/assets/images/portfolio/logo-music100.svg"
@@ -46,6 +48,25 @@ const Portfolio = () => {
             tools="php, wordpress, yoast seo, wp bakery, slider revolution"
             link="https://efbi.ir"
           />
+          <h2 className="text-lg text-gray-500 font-bold">طراحی لوگو</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4">
+            <div className="flex flex-col gap-2 bg-gray-100 rounded-md p-4">
+              <div className="">
+                <Image
+                  src="/assets/images/portfolio/logo-hilite.svg"
+                  alt='هایلایت | پلتفرم تبلیغات آنلاین صنعت و ساختمان'
+                  width={400}
+                  height={400}
+                  priority
+                  className='w-auto h-auto rounded-md'
+                />
+              </div>
+              <div className="w-full flex flex-col gap-2">
+                <h2 className="text-gray-700 text-lg">طراحی لوگو هایلایت</h2>
+                <p className="text-sm text-gray-500">هایلایت پلتفرم تبلیغات آنلاین صنعت و ساختمان ایران می باشد.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
