@@ -49,8 +49,8 @@ const Portfolio = () => {
             link="https://efbi.ir"
           />
           <h2 className="text-lg text-gray-500 font-bold">طراحی لوگو</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4">
-            <div className="flex flex-col gap-2 bg-gray-100 rounded-md p-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+            <div className="flex flex-col gap-2 bg-indigo-500/50 rounded-md p-4">
               <div className="">
                 <Image
                   src="/assets/images/portfolio/logo-hilite.svg"
@@ -63,7 +63,39 @@ const Portfolio = () => {
               </div>
               <div className="w-full flex flex-col gap-2">
                 <h2 className="text-gray-700 text-lg">طراحی لوگو هایلایت</h2>
-                <p className="text-sm text-gray-500">هایلایت پلتفرم تبلیغات آنلاین صنعت و ساختمان ایران می باشد.</p>
+                <p className="text-sm text-gray-200">هایلایت پلتفرم تبلیغات آنلاین صنعت و ساختمان ایران می باشد.</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 bg-indigo-500/50 rounded-md p-4">
+              <div className="">
+                <Image
+                  src="/assets/images/portfolio/logo-hamideyvazi.svg"
+                  alt='حمید عیوضی | مدرس ارز های دیجیتال'
+                  width={400}
+                  height={400}
+                  priority
+                  className='w-auto h-auto rounded-md'
+                />
+              </div>
+              <div className="w-full flex flex-col gap-2">
+                <h2 className="text-gray-700 text-lg">طراحی لوگو حمید عیوضی</h2>
+                <p className="text-sm text-gray-200">حمید عیوضی مدرس دوره های ارز دیجیتال</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 bg-indigo-500/50 rounded-md p-4">
+              <div className="">
+                <Image
+                  src="/assets/images/portfolio/logo-cafeparrot.png"
+                  alt='کافه پاروت | خرید آنلاین لوازم نگهداری حیوانات خانگی'
+                  width={400}
+                  height={400}
+                  priority
+                  className='w-auto h-auto rounded-md'
+                />
+              </div>
+              <div className="w-full flex flex-col gap-2">
+                <h2 className="text-gray-700 text-lg">طراحی لوگو کافه پاروت</h2>
+                <p className="text-sm text-gray-200">کافه پاروت خرید آنلاین لوازم نگهداری حیوانات خانگی</p>
               </div>
             </div>
           </div>
