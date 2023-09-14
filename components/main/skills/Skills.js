@@ -1,4 +1,4 @@
-import SkillBox from "@/components/skill-box/SkillBox"
+import SkillBox from "@/components/main/skills/skill-box/SkillBox"
 import Image from "next/image"
 
 const Skills = () => {

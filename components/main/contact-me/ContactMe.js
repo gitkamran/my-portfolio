@@ -1,5 +1,5 @@
-import ContactBox from "@/components/contact-box/ContactBox"
-import FormContact from "@/components/formContact/FormContact"
+import ContactBox from "@/components/main/contact-me/contact-box/ContactBox"
+import FormContact from "@/components/main/contact-me/form-contact/FormContact"
 import { BsFillEnvelopeAtFill, BsTelephoneFill, BsWhatsapp } from "react-icons/bs"
 
 const ContactMe = () => {
