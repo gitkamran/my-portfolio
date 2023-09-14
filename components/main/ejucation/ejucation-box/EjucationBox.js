@@ -52,7 +52,7 @@ const EjucationBox = ({ title, desc, courseDur, score, src, alt }) => {
                 </div>
                 {
                     showImage &&
-                    <div className="fixed inset-0 bg-indigo-500/50 z-50 p-4">
+                    <div className="fixed inset-0 bg-indigo-500/70 z-50 p-4">
                         <div className='flex items-center justify-center w-full h-full'>
                             <Image
                                 src={linkImage}
@@ -63,7 +63,7 @@ const EjucationBox = ({ title, desc, courseDur, score, src, alt }) => {
                                 className='w-auto h-auto rounded-md'
                             />
                         </div>
-                        <BsX onClick={() => setShowImage(false)} className="cursor-pointer absolute top-2 right-2 text-3xl text-white" />
+                        <BsX onClick={() => setShowImage(false)} className="cursor-pointer absolute top-2 right-2 text-4xl text-white" />
                     </div>
                 }
             </div>

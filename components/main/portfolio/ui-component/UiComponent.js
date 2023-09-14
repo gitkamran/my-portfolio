@@ -35,24 +35,25 @@ const UiComponent = () => {
                             className='w-auto h-auto rounded-md'
                         />
                     </div>
-                    {
-                        showImage &&
-                        <div className="fixed inset-0 bg-indigo-500/50 z-50">
-                            <div className="fixed inset-10 bg-indigo-300/50 z-50 rounded-md p-2 flex items-center justify-center h-auto">
-                                <Image
-                                    src={linkImage}
-                                    alt='طراحی UI پلتفرم تبلیغات آنلاین هایلایت'
-                                    width={800}
-                                    height={800}
-                                    priority
-                                    className='w-auto h-auto rounded-md'
-                                />
-                            </div>
-                            <BsX onClick={() => setShowImage(false)} className="cursor-pointer absolute top-2 right-2 text-3xl text-white" />
-                        </div>
-                    }
+
                 </div>
             ))}
+            {
+                showImage &&
+                <div className="fixed inset-0 bg-indigo-500/50 z-50">
+                    <div className='flex items-center justify-center w-full h-full'>
+                        <Image
+                            src={linkImage}
+                            alt='طراحی UI پلتفرم تبلیغات آنلاین هایلایت'
+                            width={800}
+                            height={800}
+                            priority
+                            className='w-auto h-auto rounded-md'
+                        />
+                    </div>
+                    <BsX onClick={() => setShowImage(false)} className="cursor-pointer absolute top-2 right-2 text-3xl text-white" />
+                </div>
+            }
         </div>
     )
 }
