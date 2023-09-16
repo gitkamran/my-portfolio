@@ -15,7 +15,7 @@ const UiComponent = () => {
         }
     };
     return (
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4 w-full">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 w-full">
             {UiImages.map((img, i) => (
                 <div key={i}>
                     <div onClick={() => {

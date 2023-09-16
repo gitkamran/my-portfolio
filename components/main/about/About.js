@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { BsBook, BsCodeSlash, BsGeoAlt, BsHeart } from 'react-icons/bs'
+import { BsMortarboard, BsCodeSlash, BsGeoAlt, BsCalendarDate } from 'react-icons/bs'
 
 const About = () => {
   return (
@@ -13,12 +13,12 @@ const About = () => {
             <h2>ساکن کرج</h2>
           </div>
           <div className='flex items-center gap-1 md:text-lg lg:text-xl text-gray-500'>
-            <BsBook className='text-indigo-400' />
+            <BsMortarboard className='text-indigo-400' />
             <h2>لیسانس کامپیوتر</h2>
           </div>
           <div className='flex items-center gap-1 md:text-lg lg:text-xl text-gray-500'>
-            <BsHeart className='text-indigo-400' />
-            <h2>متاهل</h2>
+            <BsCalendarDate className='text-indigo-400' />
+            <h2>متولد 1371</h2>
           </div>
           <div className='flex items-center gap-1 md:text-lg lg:text-xl text-gray-500'>
             <BsCodeSlash className='text-indigo-400' />
