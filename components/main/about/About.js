@@ -1,8 +1,9 @@
+"use client"
 import Image from 'next/image'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { BsMortarboard, BsCodeSlash, BsGeoAlt, BsCalendarDate } from 'react-icons/bs'
-
 const About = () => {
+  const router = useRouter()
   return (
     <div id='about' className='snap-start w-full min-h-screen flex flex-col gap-4 items-center justify-center bg-indigo-100 pt-12'>
       <div className='flex flex-col md:flex-row md:items-stretch justify-center gap-2 w-[95%] lg:w-[80%] shadow-md rounded-md bg-indigo-200/30 overflow-hidden p-2 md:p-4'>
@@ -26,7 +27,7 @@ const About = () => {
           </div>
           <p className='text-gray-600 text-sm lg:text-base'>
             در حال حاضر react js، next js و node js کار می کنم.
-            می تونید مهارت های من رو <Link href="/#skills" className='text-blue-500 underline underline-offset-4'>اینجا</Link> مطالعه بفرمائید.</p>
+            می تونید مهارت های من رو <span onClick={() => router.push("/#skills")} className='text-blue-500 underline underline-offset-4 cursor-pointer'>اینجا</span> مطالعه بفرمائید.</p>
         </div>
         <div className='flex items-center justify-center w-full md:w-auto overflow-hidden rounded-md'>
           <Image

@@ -5,6 +5,7 @@ import Portfolio from "@/components/main/portfolio/Portfolio";
 import Skills from "@/components/main/skills/Skills";
 
 export default function Home() {
+  
   return (
     <main className="snap-y">
       <About />
