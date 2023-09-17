@@ -1,14 +1,4 @@
-"use client"
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
-import { useEffect } from "react";
-
 const Navbar = () => {
-    const router = useRouter()
-    const pathname = usePathname()
-    console.log(pathname)
-    useEffect(() => {
-        console.log("1")
-    }, [pathname]);
 
     return (
         <nav>
